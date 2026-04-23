@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>모두챌린지 개인정보 처리방침</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans KR', sans-serif; background: #0D0E14; color: #F0F0F0; line-height: 1.8; }
+  .hero { background: linear-gradient(135deg, #6C5CE7, #00CEC9); padding: 60px 20px; text-align: center; }
+  .hero h1 { font-size: 2.2rem; font-weight: 900; color: #fff; margin-bottom: 8px; }
+  .hero p { color: rgba(255,255,255,0.8); font-size: 1rem; }
+  .lang-switch { display: flex; justify-content: center; gap: 12px; padding: 20px; }
+  .lang-btn { padding: 8px 24px; border-radius: 20px; border: 1px solid #6C5CE7; background: transparent; color: #A29BFE; cursor: pointer; font-size: 14px; font-weight: 600; transition: all 0.2s; }
+  .lang-btn.active, .lang-btn:hover { background: #6C5CE7; color: #fff; border-color: #6C5CE7; }
+  .container { max-width: 800px; margin: 0 auto; padding: 40px 20px 80px; }
+  .section { background: #13141F; border: 1px solid #1E2030; border-radius: 16px; padding: 28px; margin-bottom: 20px; }
+  .section h2 { color: #A29BFE; font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+  .section p, .section li { color: #9CA3AF; font-size: 0.95rem; line-height: 1.8; }
+  .section ul { padding-left: 20px; }
+  .section li { margin-bottom: 6px; }
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 12px; font-size: 11px; font-weight: 700; background: #6C5CE720; color: #A29BFE; border: 1px solid #6C5CE740; margin-right: 6px; }
+  .date { text-align: center; color: #4A5070; font-size: 13px; padding-bottom: 20px; }
+  .contact-box { background: linear-gradient(135deg, #6C5CE720, #00CEC920); border: 1px solid #6C5CE740; border-radius: 16px; padding: 24px; text-align: center; margin-top: 32px; }
+  .contact-box a { color: #A29BFE; text-decoration: none; font-weight: 600; }
+  [lang-content="en"] { display: none; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>🧠 모두챌린지</h1>
+  <p>개인정보 처리방침 · Privacy Policy</p>
+</div>
+
+<div class="lang-switch">
+  <button class="lang-btn active" onclick="setLang('ko')">한국어</button>
+  <button class="lang-btn" onclick="setLang('en')">English</button>
+</div>
+
+<div class="container">
+  <p class="date" lang-content="ko">최종 업데이트: 2025년 4월 25일</p>
+  <p class="date" lang-content="en">Last updated: April 25, 2025</p>
+
+  <!-- 한국어 -->
+  <div lang-content="ko">
+    <div class="section">
+      <h2>📋 개요</h2>
+      <p>모두챌린지(이하 "앱")는 두뇌 트레이닝 카드게임으로, 사용자의 개인정보를 소중히 여깁니다. 본 방침은 앱이 수집하는 정보와 그 사용 방법을 설명합니다.</p>
+    </div>
+    <div class="section">
+      <h2>📦 수집하는 정보</h2>
+      <ul>
+        <li><span class="badge">계정</span> Google 로그인 시 이름, 이메일 주소</li>
+        <li><span class="badge">게임</span> 게임 점수, IQ 점수, 스테이지 기록</li>
+        <li><span class="badge">구매</span> 인앱 구매 내역 (구매한 캐릭터/스킨 목록)</li>
+        <li><span class="badge">기기</span> 기기 식별자 (익명 로그인 시)</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>🎯 정보 사용 목적</h2>
+      <ul>
+        <li>글로벌 리더보드 운영 및 순위 표시</li>
+        <li>게임 진행 상황 저장 및 복원</li>
+        <li>구매한 캐릭터·스킨 소유권 관리</li>
+        <li>서비스 개선 및 오류 분석</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>🔒 정보 보호</h2>
+      <p>모든 데이터는 Google Firebase로 안전하게 암호화 저장됩니다. 제3자에게 판매하거나 공유하지 않습니다. 광고 목적으로 사용하지 않습니다.</p>
+    </div>
+    <div class="section">
+      <h2>🗑️ 데이터 삭제</h2>
+      <p>앱 내 설정에서 계정 삭제 요청이 가능하며, 삭제 시 모든 관련 데이터가 영구 제거됩니다. 문의: 아래 이메일로 요청하세요.</p>
+    </div>
+    <div class="section">
+      <h2>👶 아동 개인정보</h2>
+      <p>만 14세 미만 아동의 개인정보는 의도적으로 수집하지 않습니다. 해당 사실이 확인될 경우 즉시 삭제합니다.</p>
+    </div>
+    <div class="section">
+      <h2>🔧 사용 기술</h2>
+      <ul>
+        <li><span class="badge">Firebase Auth</span> 로그인 인증</li>
+        <li><span class="badge">Cloud Firestore</span> 데이터 저장</li>
+        <li><span class="badge">Google Play Billing</span> 인앱 결제</li>
+        <li><span class="badge">Google Analytics</span> 서비스 분석 (익명)</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- English -->
+  <div lang-content="en">
+    <div class="section">
+      <h2>📋 Overview</h2>
+      <p>Modu Challenge is a brain-training card game. We are committed to protecting your privacy. This policy explains what information we collect and how we use it.</p>
+    </div>
+    <div class="section">
+      <h2>📦 Information We Collect</h2>
+      <ul>
+        <li><span class="badge">Account</span> Name and email when signing in with Google</li>
+        <li><span class="badge">Game</span> Game scores, IQ scores, stage progress</li>
+        <li><span class="badge">Purchase</span> In-app purchase history (owned characters/skins)</li>
+        <li><span class="badge">Device</span> Device identifier (for anonymous login)</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>🎯 How We Use Information</h2>
+      <ul>
+        <li>Global leaderboard operation and ranking display</li>
+        <li>Saving and restoring game progress</li>
+        <li>Managing ownership of purchased characters and skins</li>
+        <li>Service improvement and error analysis</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>🔒 Data Protection</h2>
+      <p>All data is securely encrypted and stored via Google Firebase. We do not sell or share data with third parties. We do not use data for advertising purposes.</p>
+    </div>
+    <div class="section">
+      <h2>🗑️ Data Deletion</h2>
+      <p>You can request account deletion from the app settings. Upon deletion, all associated data will be permanently removed. Contact us via email below.</p>
+    </div>
+    <div class="section">
+      <h2>👶 Children's Privacy</h2>
+      <p>We do not intentionally collect personal information from children under 14. If we become aware of such data, we will delete it immediately.</p>
+    </div>
+    <div class="section">
+      <h2>🔧 Technologies Used</h2>
+      <ul>
+        <li><span class="badge">Firebase Auth</span> Authentication</li>
+        <li><span class="badge">Cloud Firestore</span> Data storage</li>
+        <li><span class="badge">Google Play Billing</span> In-app purchases</li>
+        <li><span class="badge">Google Analytics</span> Anonymous analytics</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="contact-box">
+    <p style="color:#F0F0F0; font-weight:700; margin-bottom:8px;">📧 문의 · Contact</p>
+    <p style="color:#9CA3AF; font-size:14px;">개인정보 관련 문의 · Privacy inquiries</p>
+    <a href="mailto:proxima9345@gmail.com">proxima9345@gmail.com</a>
+  </div>
+</div>
+
+<script>
+function setLang(lang) {
+  document.querySelectorAll('[lang-content]').forEach(el => {
+    el.style.display = el.getAttribute('lang-content') === lang ? 'block' : 'none';
+  });
+  document.querySelectorAll('.lang-btn').forEach((btn, i) => {
+    btn.classList.toggle('active', (lang === 'ko' && i === 0) || (lang === 'en' && i === 1));
+  });
+}
+</script>
+</body>
+</html>
